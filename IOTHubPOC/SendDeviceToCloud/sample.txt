@@ -1,0 +1,53 @@
+﻿{
+
+  "Command": {
+
+    "Id": "89544d9a-3ab5-49ba-b651-df929fd6f86c",
+
+    "TargetExecutorId": [
+
+      "REF^0123456789^1234-12"
+
+    ],
+
+    "AckModalities": {
+
+      "Received": {
+
+        "Condition": "ALWAYS",
+
+        "Timeout": "PT2H"
+
+      },
+
+      "Validated": {
+
+        "Condition": "NEVER",
+
+        "Timeout": "PT0S"
+
+      },
+
+      "Executed": {
+
+        "Condition": "ON_SUCCESS",
+
+        "Timeout": "PT2H"
+
+      }
+
+    },
+
+    "Timestamp": "2016-10-06T15:32:05.257809Z",
+
+    "CreatorId": "BA-REGCONF",
+
+    "ProcessingMode": "PRODUCTION",
+
+    "Token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1Nio"
+
+  },
+
+  "Country": "US"
+
+}

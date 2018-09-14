@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadC2DClient", "SimulatedDevice\ReadC2DClient.csproj", "{B299AEE6-C7BB-472B-882D-70E927329D8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendCloudToDevice", "SendCloudToDevice\SendCloudToDevice.csproj", "{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SendDeviceToCloud", "SendDeviceToCloud\SendDeviceToCloud.csproj", "{EF9F2750-A221-4878-9DCA-891169CAF660}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReadD2CClient", "SimulatedDeviceD2C\ReadD2CClient.csproj", "{F6560D73-0687-42AE-9569-6BFE1AC811C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain.Model", "Domain.Model\Domain.Model.csproj", "{2DD7083F-F82C-46E6-AB8D-843281622EAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IOTHub.Web.Api", "IOTHub.Web\IOTHub.Web.Api.csproj", "{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web.Api", "Web.Api", "{81F0F745-56E2-4078-BFC0-987559F1CDD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Models", "Models", "{F4C8E42C-AA90-4D09-86B5-C5CF1589622A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "C2D", "C2D", "{E916B2D8-F270-40A6-A3A3-16F347906697}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "D2C", "D2C", "{E4830373-84C2-403F-859A-10E860B6D5AC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web.Api.Tester", "Web.Api.Tester", "{3511718B-C0DC-4B04-920D-5FE1EC67E843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Api.Tester", "Web.Api.Tester\Web.Api.Tester.csproj", "{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B299AEE6-C7BB-472B-882D-70E927329D8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B299AEE6-C7BB-472B-882D-70E927329D8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B299AEE6-C7BB-472B-882D-70E927329D8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B299AEE6-C7BB-472B-882D-70E927329D8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF9F2750-A221-4878-9DCA-891169CAF660}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF9F2750-A221-4878-9DCA-891169CAF660}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF9F2750-A221-4878-9DCA-891169CAF660}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF9F2750-A221-4878-9DCA-891169CAF660}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6560D73-0687-42AE-9569-6BFE1AC811C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6560D73-0687-42AE-9569-6BFE1AC811C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6560D73-0687-42AE-9569-6BFE1AC811C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6560D73-0687-42AE-9569-6BFE1AC811C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DD7083F-F82C-46E6-AB8D-843281622EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DD7083F-F82C-46E6-AB8D-843281622EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DD7083F-F82C-46E6-AB8D-843281622EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DD7083F-F82C-46E6-AB8D-843281622EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B299AEE6-C7BB-472B-882D-70E927329D8A} = {E916B2D8-F270-40A6-A3A3-16F347906697}
+		{08AE61B3-41DA-4DB9-8E58-A8640E91ABEF} = {E916B2D8-F270-40A6-A3A3-16F347906697}
+		{EF9F2750-A221-4878-9DCA-891169CAF660} = {E4830373-84C2-403F-859A-10E860B6D5AC}
+		{F6560D73-0687-42AE-9569-6BFE1AC811C0} = {E4830373-84C2-403F-859A-10E860B6D5AC}
+		{2DD7083F-F82C-46E6-AB8D-843281622EAC} = {F4C8E42C-AA90-4D09-86B5-C5CF1589622A}
+		{450E572E-D5CD-4D2F-A4E0-1F7AFBBC866D} = {81F0F745-56E2-4078-BFC0-987559F1CDD0}
+		{0972BCBB-F9FD-46F1-B05A-9A3EA6DAE804} = {3511718B-C0DC-4B04-920D-5FE1EC67E843}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9712448C-6EC5-4002-9169-A36478E7C709}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+	EndGlobalSection
+EndGlobal
