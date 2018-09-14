@@ -1,0 +1,75 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+
+}
+
+@*<div class="jumbotron">
+        <h1>ASP.NET</h1>
+        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+        <p><a href="https://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+    </div>*@
+
+<br />
+<div class="row">
+    <form method="post">
+        <h3>Add Device</h3>
+        <div class="col-lg-12">
+            @if (ViewBag.error != null)
+            {
+                <div class="alert alert-danger">@ViewBag.error</div>
+            }
+
+            <table class="table table-bordered">
+                <tr>
+                    <td>Add Device</td>
+                    <td><input type="text" name="DeviceId" value="" class="form-control" /></td>
+                    <td><input type="submit" value="Add" class="btn btn-block" /></td>
+                </tr>
+            </table>
+        </div>
+        <h3>Device List</h3>
+        <div class="col-lg-12">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Read Messages</th>
+                        <th>Device Id</th>
+                        <th>Status</th>
+                        <th>Last Activity Time</th>
+                        <th>C2D Message Count</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in ViewBag.deviceList)
+                    {
+                        <tr>
+                            <td><a href="@Url.Action("About", "Home", new { deviceid = item.Name })" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></td>
+                            <td>@item.Name</td>
+                            <td>@item.Status</td>
+                            <td>@item.LastActivityTime</td>
+                            <td>@item.CloudToDeviceMessageCount</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </form>
+
+    <form method="post" action="@Url.Action("SendMessages", "Home")">
+        <h3>Send Cloud to Device Message</h3>
+        @if (ViewBag.senderror != null)
+            {
+            <div class="alert alert-danger">@ViewBag.senderror</div>
+        }
+        <div class="col-lg-12">
+            <table class="table table-bordered">
+                <tr>
+                    <td>Enter Device Id</td>
+                    <td><input type="text" name="Message" value="" class="form-control" /></td>
+                    <td><input type="submit" value="Send" class="btn btn-block" /></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</div>
